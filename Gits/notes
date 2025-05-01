@@ -1,0 +1,7 @@
+//1) code update kiy humne, website crash hogya suppose: coder ko revert back krna hoga 
+//2) decide the ownership of code
+//3) we set the tracker to check the defective in a code or who write the code during the collaboration project work, if someone code made crash the website then manager can track that coder's code
+
+//4) suppose 3pm , 4pm , 5pm ,6pm me code same thi aur run bhi kr rhi thi acche se , then suddenly 6pm ke baad website crash kr gyi, then coder will go to that 5pm code before crash of website so that he can remove the unwanted code 
+
+// Git hi tracker ka kaam krti hai yaha pe 

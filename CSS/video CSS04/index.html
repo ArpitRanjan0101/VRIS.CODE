@@ -1,0 +1,77 @@
+/* This is the most important video related to the selector,focus on it */
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   /* element selector below one */
+   div{
+   /* background-color: red;*/
+   }
+   /* Class Selector below one*/
+   .red{
+    background-color: red;
+   }
+   /* ID selector below one */
+   #green{
+    background-color: green;
+   }
+   /* Child selector*/
+   div >p{ /* Div ke andar agar direct child hua to hi child selector apply hoti hai */
+    background-color: maroon;
+    color: blue;
+   }
+   /* Descendent selector */ 
+   /* div k andar kahi bhi agar paragraph ho ya kuch aur  bhi ho agar muje change krna hai usme to Descendent selector ka use krege simply */
+   div p{
+    background-color: aquamarine;
+    color: rgb(125, 76, 12);
+   }
+   /* Universal selector*/ /* sabhi me apply hote hai universal selector*/
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   /*pseudo selector */
+   a:visited{ /* this is the selector which help to provide the color after visiting the site , the text color changes */ 
+    color: maroon;
+   }
+   a:link{ /*  this also the same pseudo selector which shows the pre provided (means we provide the color) color to the text until we have not visited to the site */
+    color: green;
+   }
+   a:active{ /* this is the too pseudo selector that is when we click on the link then the background color changes , color that we have provided */
+    background-color: black ;
+    
+   }
+   button:hover{
+    background-color: rgb(70, 70, 116);
+   }
+   p:first-child{ /* jaha par paragraph apne parents ka first child hai waha color change ho jaega */
+    background-color: rgb(255, 0, 204);
+   }
+
+    </style>
+</head>
+<body>
+    <div class="one">
+     <p> I am first</p>
+     <p>I am second</p>
+    </div>
+    <div class="red">
+         I am div
+         <article>
+         <p> I am arpit ranjan , the child of div </p>
+        </article>
+    </div>
+    <div id="green">
+         my name is arpit
+    </div>
+    <a href="http://www.google.com"> Go to the Google</a>
+    <a href="http://www.Facebook.com"> Go to the Facebook</a>
+   <button><a href="http://www.Facebook.com"> Go to the Facebook</a></button> 
+</body>
+</html>

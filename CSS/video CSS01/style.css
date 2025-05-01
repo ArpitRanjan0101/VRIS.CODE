@@ -1,0 +1,23 @@
+/* select by element */
+h1 {
+    color: chartreuse;
+    background-color: rgb(164, 115, 204);
+}
+
+ul {
+    color: rgb(56, 104, 8);
+    background-color: dodgerblue;
+}
+/*  Select by class name here */
+/*  we need to apply dot before the class name to select the class name */
+.first{
+    color: rgb(68, 20, 98);
+    background-color: rgb(174, 174, 27);
+}
+/* select by Id */
+/* Id selector unique hoti hai
+aur humlog usme hash use krte hai */
+#third{
+    color: darkred;
+    background-color: darkgrey;
+}

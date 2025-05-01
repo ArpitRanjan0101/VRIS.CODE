@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodels</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+     .box{
+        background-color: aqua;
+        color: brown;
+     }
+     .box1{
+        margin: 35px;/* agar  maine two boxes banae hai too dono margin collapse kar jaega ,jiss box ki margin jyda hogi usii ki margin ki value collapse kar jaega .matalb apply ho jaegii(esse ko margin collapse bolte hai)*/
+        padding: 10px;
+        border: 2px solid black;
+        color: blueviolet;
+        background-color: chartreuse;
+        height: 200px;/* agar mai sirf height declare kru too,yaha par sirf content ki height 200px assume kr lege*/
+        box-sizing: border-box;/* likin agar maine box-sizing apply krdi hai too height collectively ho jaega content+padding+border*/
+        
+     }
+     .box2{
+        margin: 25px;
+        padding: 10px;
+        border: 2px solid black;
+        color: rgb(226, 43, 43);
+        background-color: chartreuse;
+        height: 200px;/* agar mai sirf height declare kru too,yaha par sirf content ki height 200px assume kr lege*/
+        box-sizing: border-box;
+     }
+    </style>
+</head>
+<body>
+    <div class="box box1"> I am a box</div>/* ek elements me multiple classes define kar skte hai*/
+    <div class="box box2"> I am another box</div>
+</body>
+</html>
