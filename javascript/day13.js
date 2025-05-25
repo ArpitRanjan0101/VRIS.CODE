@@ -142,7 +142,20 @@
 //     console.log("hello guys");
 //   } // no output , since we cant call the varibale before defining it
 
+// Question is that , we have access the object keys and values
 
+
+const obj={
+    name:"arpit",
+    age:20,
+    amount:340,
+    city:"hazaribagh"
+}
+const key=Object.keys(obj);
+// for('name' ,'age',amount',city')
+for(let i=0;i<key.length;i++){
+    console.log(obj[key[i]]);
+}
 
 
 
