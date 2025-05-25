@@ -59,12 +59,88 @@
 
 
 
-//----------------Fat Arrow function
+//----------------Fat Arrow function-------------
 // same function it will perform but it make the code short and crispy and easier 
 
-const fun=()=>{
-    console.log("hello coder army"); 
+// first code
+// const fun=()=>{
+//     console.log("hello coder army"); 
+// }
+// fun();
+
+// // second code
+
+// const sum=(num1,num2)=>{return num1+num2}; // here we use return so tht it can the value the value to console 
+// console.log(sum(2,5));
+
+// // Third way to write the fat arrow function
+
+
+// const multiply=(number1,number2)=> number1*number2; // note krne wali baat yaha yeah hai ki pta nhi chal rha hai ki yeah function bhi hai...so be careful , agar single line me likh rhe hai too return likhne ki bhi jrurat nhi hai
+
+// console.log(multiply(5,6));
+
+
+// // IF we have single parameter then we dont put it into the braket,see below
+
+// const cube=Number=>Number*Number*Number; // for single parameter we dont use even the bracket
+// console.log(cube(4));
+
+
+//-----------USe Of REST operator
+
+// const sum=function(...number){ 
+
+//     // useful hai rest operator
+//       // here we use rest operator since we dont know , how many number for additon will appear so use rest operator
+
+//     console.log(number);
+// }
+// sum(2,4,5); 
+// sum(6,7,8,9,5);
+// // output yaha pe array ke form me aaega , then we can use for loop to get the sum of the present array
+
+// // ----------SPREAD OPerator----------
+
+// let arr=[1,2,3,4,5,6];
+// let arr2=[...arr];
+// console.log(arr2);
+
+
+// _-----------PAssing the objects as the value---
+ 
+let obj={
+    name:"Arpit",
+    age:20,
+    amount:530,
 }
+function fun(obj1){
+    console.log(obj1.name ,obj1.amount);
+}
+fun(obj);
+
+
+// -------(DESTRUCTURING OF OBJECT)   WE CAN destructure the object mean , we can extract the particular value which we needed
+
+const obj1={
+    name:"Heer",
+    age:19,
+    amount:1000,
+}
+
+function funn({name,age}){
+    console.log(name,age);
+}
+funn(obj1);
+
+
+
+
+
+
+
+
+
 
 
 
