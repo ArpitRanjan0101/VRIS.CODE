@@ -13,7 +13,7 @@
 
 // --------------- ADD two numbers program-----------
 
-// function sum(num1,num2){   // fn ka jo name usse hi call krna hota hai speeling bhi same hona chye and it contain the parameter
+// function sum(num1,num2){   // fn ka jo name usse hi call krna hota hai spelling bhi same hona chaye and it contain the parameter
 //     console.log(num1+num2);
 // };
 
