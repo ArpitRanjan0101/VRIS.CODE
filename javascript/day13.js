@@ -91,5 +91,82 @@
 
 // -------------------SCOPE IN JAVASCRIPT--------------------
 
+// Global scope , local scope(functional scope),block scope
+// let a=10;
+//var b=20;
+//const c=30;
+// all above are the Global scope 
 
- 
+ // Functional scope(local scope)
+
+//  function greet(){
+//     let a=10;   // all this can be accessed within the function
+//     var b=20; // we can not access it out of the function
+//     const c=30;
+//      console.log("Hello everyone");
+//      console.log(a,b,c);
+//  }
+//  greet();
+
+// Block scope
+// var amount=400;
+// var amount=200;
+// var amount =900;
+// var amount=100; 
+// if(true){
+//     let a=12;
+//     var b=20;
+//     const c=30;
+// }
+// console.log(b);     // out of the block , we cant access the let and const while var can be accessed eve if the the above if statment is ended now yet.
+
+ // let and const muiltple scope define nhi krne dete hai while var allow kar deta hai , jiske krn required data access krb ho jta hai kyuki muiltple var define hote hai too unke access krne keilye dikkat aa jati hai
+
+
+ let amount=20; // global scope
+ if(true){
+    let amount=20; // block scope
+    console.log(amount);
+ }
+
+
+ // In case of the Function we can call it before defining of the of the function..it will happen only in simple function ,.. but if we try to call the fn having stored in variable , and will try to call that variable will unable to call , no output will come
+
+//  greet();
+//  function greet(){
+//     console.log("hello coder army");
+//  }
+
+//  meet();
+//   const meet=function(){
+//     console.log("hello guys");
+//   } // no output , since we cant call the varibale before defining it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
