@@ -154,7 +154,7 @@ const obj={
 const key=Object.keys(obj);
 // for('name' ,'age',amount',city')
 for(let i=0;i<key.length;i++){
-    console.log(obj[key[i]]);
+    console.log(obj[key[i]]);// this line print the value of the key
 }
 
 
