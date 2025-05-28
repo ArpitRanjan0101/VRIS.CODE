@@ -9,5 +9,9 @@ let b = 20;
 let str = "arpit";
 // Boolean 
 let isExist = true;
-// Bigint
+// Bigint // this bigint introduced in ES2020
 let bignumber = 123456789n;
+// NULL
+let abc = null;
+let bcs = undefined;
+let abs = 20;

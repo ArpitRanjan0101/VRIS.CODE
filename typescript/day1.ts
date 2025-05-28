@@ -18,5 +18,8 @@ let isExist:boolean =true;
 
  let bignumber:bigint=123456789n;
 
+// NULL
+ let abc:null=null;
+let bcs:undefined=undefined;
 
-
+let abs:number=20; 
