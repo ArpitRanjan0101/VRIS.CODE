@@ -59,7 +59,7 @@ arr3.push(10);
 let arr4:(string | number | boolean)[] = ["rohit",10,false,11];  // if we try to push other type value then we have to write the type explicitily..
 
 
-// TUPLE is also an array with fixed size of element
+// TUPLE is also an array with fixed size of element  
 
 let tuple:[string,number,number] = ["Rohit",10,11];
 
@@ -71,7 +71,8 @@ let obj1:{name:string,age:number,gender:string} = {
     age:20,
     gender:"female"
 }
-
+ 
+// Inline defining of the objects
 
 let person :{name:string;age:number,balance:number};
 
@@ -81,10 +82,11 @@ person = {
     balance:420
 };
 
-let n1:number;
+let n1:number; // inline object defining is similar to this 
 n1 = 10;
 
-
+ 
+// Using type ALises...below , see this once...
 
 type customer = {
     name:string,
