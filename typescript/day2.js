@@ -16,21 +16,23 @@ val2 = "Rohit";
 let num = 10;
 let x = 10;
 let val = "Rohit";
-let money;
+let money; // this any type , we can assign any value to it.
 money = "Rohit";
 money = 20;
 // console.log(money.toUpperCase());
-let val2;
+let val2; // we basicallly use when we dont define , wht will be the value of the data.further we will give the condition see below if condition..
 val2 = "Rohit";
 val2 = 10;
+// console.log(val2.toUppercase());   // here it will give an error because firstly we have to consume the value what the type , u are trying to apply ,means we have to define the type of variable confirm , then we can go to console ....whether it is string or number
 if (typeof val2 === 'string')
     console.log(val2.toUpperCase());
 if (typeof val2 === 'number')
     console.log(val2.toFixed(2));
 // Non Primitive
+// Defining of an array in tyescript with it's type below..
 let arr = [2, 4, 5, 7, 11];
-let arr2 = [2, 1, 19, 10];
-let arr3 = ["Rohit", 20, 11, "Sohan"];
+let arr2 = [2, 1, 19, 10]; // if we dont define the type then it also valid , since while hover it shows the type..
+let arr3 = ["Rohit", 20, 11, "Sohan"]; // here we have taken the mix type of array and we define also the type explicitily here "|" is sign of union , also we can get the type on hover
 arr3.push(10);
 let arr4 = ["rohit", 10, false, 11];
 let tuple = ["Rohit", 10, 11];
