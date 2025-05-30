@@ -102,6 +102,7 @@ let c1 : customer ={
     id:"fshfsd"
 }
 
+// suppose we are making account details ,then we will use interface...seee below examples 
 
 interface admin {
     names:string,
@@ -122,7 +123,7 @@ let obj3: admin = {
 };
 
 
-// Interface vs Type
+// Interface vs Type(h.w to see )
 // Function
 // Classes
 
