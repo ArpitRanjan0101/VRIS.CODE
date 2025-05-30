@@ -1,0 +1,1 @@
+<!-- Type Inference in typescript refers to the ability of the typescript complier to automatically determine the type of the variable based on the value assigned to it. this means that even if you dont explicitly specify a type, TYpescript can infer the most appropriate type and apply it. -->
