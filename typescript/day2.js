@@ -34,7 +34,8 @@ let arr = [2, 4, 5, 7, 11];
 let arr2 = [2, 1, 19, 10]; // if we dont define the type then it also valid , since while hover it shows the type..
 let arr3 = ["Rohit", 20, 11, "Sohan"]; // here we have taken the mix type of array and we define also the type explicitily here "|" is sign of union , also we can get the type on hover
 arr3.push(10);
-let arr4 = ["rohit", 10, false, 11];
+let arr4 = ["rohit", 10, false, 11]; // if we try to push other type value then we have to write the type explicitily..
+// TUPLE is also an array with fixed size of element  
 let tuple = ["Rohit", 10, 11];
 // Objects
 // inline
@@ -43,13 +44,14 @@ let obj1 = {
     age: 20,
     gender: "female"
 };
+// Inline defining of the objects
 let person;
 person = {
     name: "rohit",
     age: 20,
     balance: 420
 };
-let n1;
+let n1; // inline object defining is similar to this 
 n1 = 10;
 let c1 = {
     name: "Rohit",
@@ -63,6 +65,6 @@ let obj3 = {
     position: "manager",
     id: 210
 };
-// Interface vs Type
+// Interface vs Type(h.w to see )
 // Function
 // Classes
