@@ -104,11 +104,19 @@ Object.defineProperty(customer,"name",{   // humne name ke enumerable ko false k
 
 // even the inherit props and key comes if it's enumerable is true , then also , their key will be printed
 
-for(let key in customer2 )   // yaha pe jiski bhi enumerable true hongi usi ki keys print hogi jo inherit hokar aae hai aur jo khudki assign hue hai
+Object.defineProperty(Object.prototype,'toString',{
+    enumerable:true,
+ })
+
+
+for(let key in customer)   // yaha pe jiski bhi enumerable true hongi usi ki keys print hogi jo inherit hokar aae hai aur jo khudki assign hue hai
+
     console.log(key);
 
 
- console.log(Object.getOwnPropertyDescriptor(Object.prototype, 'toString'));    // enumerable false aaega isiiliye print nhi hota hai
+//  console.log(Object.getOwnPropertyDescriptor(Object.prototype, 'toString'));      // enumerable false aaega isiiliye print nhi hota hai
 
+
+ // agar hum toString wale ko bhi print karwna chchate hai to , hume uske enumerable ko true krna hoga with the help of defineProperty
 
 // For in loop actually enumerable true hone pe , uski keys ko print krega while false hone pe uski key ko print nhi krega
