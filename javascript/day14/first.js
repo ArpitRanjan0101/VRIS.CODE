@@ -81,7 +81,9 @@
 
 // Concept of enumerable see below
 
+  // customer ki bhi koe properties inherit hue hogi , woo object.prototype se inherit hoti hai
 
+//   to agar object.prototype se inherit ho rhi hai props then kyu nhi print ho rhi hai other props , kyuki unhki emnumerable false hogi that's why
 const customer={
     name:"Heer",
     age:22,
@@ -102,5 +104,11 @@ Object.defineProperty(customer,"name",{   // humne name ke enumerable ko false k
 
 // even the inherit props and key comes if it's enumerable is true , then also , their key will be printed
 
-for(let key in customer2 )
+for(let key in customer2 )   // yaha pe jiski bhi enumerable true hongi usi ki keys print hogi jo inherit hokar aae hai aur jo khudki assign hue hai
     console.log(key);
+
+
+ console.log(Object.getOwnPropertyDescriptor(Object.prototype, 'toString'));    // enumerable false aaega isiiliye print nhi hota hai
+
+
+// For in loop actually enumerable true hone pe , uski keys ko print krega while false hone pe uski key ko print nhi krega

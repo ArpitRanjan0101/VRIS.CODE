@@ -1,6 +1,6 @@
 // ADVANCE LOOP
 
-// we will study here , Writebable, enumerable , configurable .. just check out the DAY14 folder FIRST.JS
+// we will study here , Writebable, enumerable , configurable .. just check out the DAY14 folder FIRST.JS 
 
 
 
