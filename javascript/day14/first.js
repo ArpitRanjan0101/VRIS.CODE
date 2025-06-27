@@ -37,5 +37,24 @@
 // obj.name="Heer";
 
 // console.log(obj);
+  
 
 
+// yaha pe humne niche dekha about ki account_number change nhi ho skta hai , uske liye humne writebale ko false kr diya hai
+
+
+// const obj1={
+//     name:"arpit",
+//     age:20,
+//     account_number:20001    // mai chahatu hu ki mera account number koe change nhi kr sake , so we will do some stuff , given below... 
+// };
+
+// // yaha pe writable by default true hota hai, so we will make it false so that account_number change na kr ske koe
+
+// Object.defineProperty(obj1,'account_number',{
+//     writable:false     // yaha humne writable false kr diya hai  ,as a result of which we cant change the account_number
+// })
+
+// obj1.account_number=20001;
+// console.log(obj1.account_number);
+ 
