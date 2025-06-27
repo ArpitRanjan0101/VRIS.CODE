@@ -61,6 +61,27 @@
  
 //  
 
+// const customer={
+//     name:"Heer",
+//     age:22,
+//     account_number:123,
+//     balance:2000,
+// }
+
+// name , account_num , change nhi honi chye
+
+// Object.defineProperty(customer,"name",{
+//     writable:false,
+// })
+
+// customer.name="arpit";
+// // customer.account_number=10001;
+// console.log(customer);
+
+
+// Concept of enumerable see below
+
+
 const customer={
     name:"Heer",
     age:22,
@@ -68,12 +89,8 @@ const customer={
     balance:2000,
 }
 
-// name , account_num , change nhi honi chye
-
 Object.defineProperty(customer,"name",{
-    writable:false,
+    enumerable:false, 
 })
 
-customer.name="arpit";
-// customer.account_number=10001;
-console.log(customer);
+for(let key in customer )
