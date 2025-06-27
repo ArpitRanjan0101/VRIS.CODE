@@ -88,9 +88,19 @@ const customer={
     account_number:123,
     balance:2000,
 }
+ 
+ let customer2=Object.create(customer);  // inheritance
+ customer2.city="haridwar"; 
+ customer2.place="Delhi";
 
-Object.defineProperty(customer,"name",{
+Object.defineProperty(customer,"name",{   // humne name ke enumerable ko false krdiya hai , isiliye uski key value print nhi hogi
     enumerable:false, 
 })
 
-for(let key in customer )
+
+//enumerable: jis bhi key ka enumerable true hoga , unn sab ka access hoga aur uska key print hoga
+
+// even the inherit props and key comes if it's enumerable is true , then also , their key will be printed
+
+for(let key in customer2 )
+    console.log(key);
