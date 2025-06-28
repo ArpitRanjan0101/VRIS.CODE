@@ -20,19 +20,39 @@
 //     console.log(value);
 // } // here for of loop help us to access the values of arr only , no huslte with for of loop while writing the code
 
-let str ="arpit is good boy"; // here , number value is printed of given str on iterating..
-for(let value in str)
-{
-    console.log(value);
-}
+// let str ="arpit is good boy"; // here , number value is printed of given str on iterating..
+// for(let value in str)
+// {
+//     console.log(value);
+// }
 
 
-const obj ={
-    name:"arpit",
-    age:22,
-    gender:"male"
-};
 
-for(let value of obj){
-    console.log(value); // object iterable nhi hota hai , kyuki har ek element
-}
+// const obj ={
+//     name:"arpit",
+//     age:22,
+//     gender:"male"
+// };
+
+// for(let value of obj){
+//     console.log(value); // object iterable nhi hota hai , kyuki har ek element visit krna pta nhi hota
+// }
+
+// we can iterate using Object.value or Object.keys , but it will behave as array 
+
+
+
+// for(let value of Object.keys(obj)){
+//     console.log(value,obj[value]);
+// }
+
+
+
+// So , for in loop is used with Object ,while For of loop is used with array , string
+
+
+// For Each loop
+
+
+let arr =[10,20,30,40,50];
+arr.forEach()
