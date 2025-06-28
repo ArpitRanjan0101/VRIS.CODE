@@ -15,7 +15,24 @@
 // we can implement array using for of loop , or through using simple for loop
 
 
-const arr=[10,20,11,18,13];
-for(let value of arr){
+// const arr=[10,20,11,18,13];
+// for(let value of arr){
+//     console.log(value);
+// } // here for of loop help us to access the values of arr only , no huslte with for of loop while writing the code
+
+let str ="arpit is good boy"; // here , number value is printed of given str on iterating..
+for(let value in str)
+{
     console.log(value);
-} // here for of loop help us to access the values of arr only , no huslte with for of loop while writing 
+}
+
+
+const obj ={
+    name:"arpit",
+    age:22,
+    gender:"male"
+};
+
+for(let value of obj){
+    console.log(value); // object iterable nhi hota hai , kyuki har ek element
+}
