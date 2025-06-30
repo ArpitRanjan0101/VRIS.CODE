@@ -55,4 +55,6 @@
 
 
 let arr =[10,20,30,40,50];
-arr.forEach()
+arr.forEach(function(num){
+    console.log(num);   // for each me bhi hum callbackfn use krte hai , hota ky hai yaha pe ki arr ki value phele as an argument fn ke num me jati then print hoti hai
+})
