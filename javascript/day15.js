@@ -54,7 +54,26 @@
 // For Each loop
 
 
-let arr =[10,20,30,40,50];
-arr.forEach(function(num){
-    console.log(num);   // for each me bhi hum callbackfn use krte hai , hota ky hai yaha pe ki arr ki value phele as an argument fn ke num me jati then print hoti hai
-})
+// let arr =[10,20,30,40,50];
+// arr.forEach(function(num){
+//     console.log(num);   // for each me bhi hum callbackfn use krte hai , hota ky hai yaha pe ki arr ki value phele as an argument fn ke num me jati then print hoti hai
+// })
+
+// upar wale forEach me jo callbankfn use hue hai , usse hum Fat Arrow function ka use krke bhi likh skte hai
+
+// let arr=[10,20,30,40,50,60];
+// arr.forEach((num)=>{
+//     console.log(num);   // yaha pe humne FAT arrow function ka use krke bhi value print kiya hai..
+// })
+
+// SAME line me bhi arrow function o likh skte hai to bhi execute hoga
+
+// let arr=[10,39,50,60,79];
+// arr.forEach((num)=>console.log(num));
+
+
+
+// INDEX bhi print kr skte hai
+
+let arr=[10,89,69,78,69];
+arr.forEach((num,index)=>console.log(num,index)); 
