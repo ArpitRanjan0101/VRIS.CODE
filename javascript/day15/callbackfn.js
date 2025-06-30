@@ -32,7 +32,7 @@
 
 // function names(fun){
 //     console.log("hello i am arpit");
-//     fun();
+//     fun(); // from here function is called for execution
 // }
 
 // names(function greet(){
@@ -40,7 +40,7 @@
 // })    // second way of function call me hum khud function calling ke andr hi dusre function ko define kr skte hai.
 
 
-// // Hum as a fat arrow function hi call kr skte hai
+ // Hum as a fat arrow function bhi call kr skte hai see below
 
 // names(()=>{
 //     console.log("I am call back function");
@@ -48,12 +48,19 @@
 
 
 
-// DATA agar backend se fecth kr rhe hai too
+// DATA agar backend se fetch kr rhe hai too
 
 function fetchData(){    // Backend se data fetch krega aur yaha  pe show kr dega
     // bhut sara code hog yaha pe
-    console.log("i am fetching data");
+    console.log("i am fetching data"); // we need that , this function should call in every after 5 seconds
 }
 
 
-setInterval(fetchData,5000);
+setInterval(fetchData,5000); // so we write here  to function call in every 5 second , here written in milisecond
+
+
+
+// simply call function kuch aur nhi , ek function banya humne aur dusre function o humne as an argument bhej diya hai yaha pe
+
+
+
